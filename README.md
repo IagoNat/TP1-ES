@@ -5,7 +5,7 @@
 - Iago Nathan [Fullstack/PO]
 - Matheus Nick []
 - Matheus Melo []
-- Cleiver []
+- Cleiver [Fullstack]
 
 ## Tecnologias
 
