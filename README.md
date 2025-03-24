@@ -2,7 +2,7 @@
 ## Objetivo e Features
 
 ## Membros
-- Iago Nathan [Fullstack]
+- Iago Nathan [Fullstack/PO]
 - Matheus Nick []
 - Matheus Melo []
 - Cleiver []
