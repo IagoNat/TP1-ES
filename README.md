@@ -1,4 +1,4 @@
-# TP1---ES
+# 📝 TP1---ES
 ## 🎯 Objetivo e Features
 📍Este projeto tem como objetivo desenvolver um marketplace minimalista. O foco é criar uma plataforma funcional onde usuários possam cadastrar, explorar e interagir com produtos à venda de maneira simples e eficiente. 
 
