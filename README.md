@@ -13,7 +13,7 @@
 
 ## 👨🏾‍💻 Membros
 - Iago Nathan [Fullstack]
-- Matheus Nick []
+- Matheus Menezes [Fullstack]
 - Matheus Melo []
 - Cleiver [Fullstack]
 
