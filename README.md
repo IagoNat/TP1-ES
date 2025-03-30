@@ -38,31 +38,14 @@
 10. Como usuário, quero dar uma nota de 1 a 5 estrelas para um produto.
 11. Como usuário, quero editar ou excluir meus comentários caso mude de ideia ou cometa um erro.
 
-### Sprint 1
-- **História #1:**
+### Sprint 1: Autenticação e Cadastro de Produtos
+- **História #1: Criar conta e login**
   - **Tarefas e responsáveis:**
-    - A
-    - B
-    - C
-    - D
-- **História #2:**
+    - Criar interface de cadastro e login []
+    - Implementar autenticação básica com Firebase Auth []
+- **História #2: Cadastro e listagem de produtos**
   - **Tarefas e responsáveis:**
-    - A
-    - B
-    - C
-    - D
-- **História #3:**
-  - **Tarefas e responsáveis:**
-    - A
-    - B
-    - C
-    - D
-- **História #4:**
-  - **Tarefas e responsáveis:**
-    - A
-    - B
-    - C
-    - D
-
+    - Criar formulário de cadastro de produtos []
+    - Implementar listagem de produtos no Firestore []
 
 ## Diagramas
