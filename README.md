@@ -47,5 +47,19 @@
   - **Tarefas e responsáveis:**
     - Criar formulário de cadastro de produtos []
     - Implementar listagem de produtos no Firestore []
-
+   
+- **História #3: Edição e exclusão de produtos**
+  - **Tarefas e responsáveis:**
+    - Criar botões de edição/exclusão na listagem de produtos
+    - Desenvolver endpoint para atualização/exclusão de produtos no Firestore
+    - Implementar modal de confirmação para exclusão
+    - Criar interface de edição com pré-carregamento dos dados atuais
+      
+- **História #4: Filtragem por categoria**
+  - **Tarefas e responsáveis:**
+    - Adicionar componente de filtro na barra de navegação
+    - Implementar query param para filtragem na listagem de produtos
+    - Criar chips interativas (caixas de opção clicáveis) para seleção de categorias
+    - Atualizar query no Firestore com filtro de categoria
+      
 ## Diagramas
