@@ -38,28 +38,54 @@
 10. Como usuário, quero dar uma nota de 1 a 5 estrelas para um produto.
 11. Como usuário, quero editar ou excluir meus comentários caso mude de ideia ou cometa um erro.
 
-### Sprint 1: Autenticação e Cadastro de Produtos
-- **História #1: Criar conta e login**
+### Sprint 1: Autenticação, produtos e filtragem
+- **História #1: Criar conta**
   - **Tarefas e responsáveis:**
-    - Criar interface de cadastro e login [Cleiver]
-    - Implementar autenticação básica com Firebase Auth [Matheys Menezes]
-- **História #2: Cadastro e listagem de produtos**
+    - Criar interface de cadastro [Matheus Melo]
+    - Implementar autenticação básica com Firebase Auth [Iago Nathan]
+- **História #2: Login**
   - **Tarefas e responsáveis:**
-    - Criar formulário de cadastro de produtos [Iago Nathan]
-    - Implementar listagem de produtos no Firestore [Matheus Melo]
+    - Criar interface de login [Cleiver]
+    - Validação e redirecionamento após login [Matheus Menezes]
    
-- **História #3: Edição e exclusão de produtos**
+- **História #3: Cadastro de produtos**
   - **Tarefas e responsáveis:**
-    - Criar botões de edição/exclusão na listagem de produtos [Matheus Menezes]
-    - Desenvolver endpoint para atualização/exclusão de produtos no Firestore [Cleiver]
-    - Implementar modal de confirmação para exclusão [Iago Nathan]
-    - Criar interface de edição com pré-carregamento dos dados atuais [Matheus Melo]
+    - Criar formulário de cadastro de produtos [Matheus Menezes]
+    - Upload de imagem para o Firebase Storage [Cleiver]
       
-- **História #4: Filtragem por categoria**
+- **História #4: Listagem de produtos**
   - **Tarefas e responsáveis:**
-    - Adicionar componente de filtro na barra de navegação [Matheus Melo]
-    - Implementar query param para filtragem na listagem de produtos [Matheus Menezes]
-    - Criar chips interativas (caixas de opção clicáveis) para seleção de categorias [Cleiver]
-    - Atualizar query no Firestore com filtro de categoria [Iago Nathan]
-      
+    - Implementar listagem a partir do Firestore [Matheus Melo]
+    - Criar exibição de UI limpa [Iago Nathan]
+- **História #5: Edição e exclusão de produtos**
+  - **Tarefas e responsáveis:**
+    - Botões de editar/excluir [Iago Nathan]
+    - Endpoint Firestore para update/delete [Matheus Menezes]
+    - Modal de confirmação de exclusão [Cleiver]
+    - Interface de edição com dados carregados [Matheus Melo]
+- **História #6: Filtragem por categoria**
+  - **Tarefas e responsáveis:**
+    - Chips de categoria e filtro visual [Matheus Menezes]
+    - Componente na barra de navegação [Iago Nathan]
+    - Query parametro e atualização da query [Cleiver]
+    - Integração com Firestore [Matheus Melo]
+### Sprint 2: Interações entre usuários (comentários, avaliações) e pagamentos
+- **História #7: Comentários**
+  - **Tarefas e responsáveis:**
+      - Interface de comentários [Matheus Melo]
+      - Salvar a listar comentários no Firestore [Cleiver]
+- **História #8: Editar/Excluir comentários**
+  - **Tarefas e responsáveis:**
+    - Botões editar/excluir [Iago Nathan]
+    - Controle de permissão para usuário [Matheus Menezes]
+- **História #9: Avaliação com estrelas**
+  - **Tarefas e responsáveis:**
+    - Componente visual de estrelas [Matheus Menezes]
+    - Lógica de salvar nota no Firestore [Cleiver]
+    - Interace de pagamento [Matheus Menezes]
+- **História #10: Pagamentos**
+  - **Tarefas e responsáveis:**
+    - Integração com Stripe (checkout) [Iago Nathan]
+    - Lógica de vendedor receber valor [Cleiver]
+    - Interface de pagamento [Matheus Menezes]  
 ## Diagramas
