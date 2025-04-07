@@ -41,25 +41,25 @@
 ### Sprint 1: Autenticação e Cadastro de Produtos
 - **História #1: Criar conta e login**
   - **Tarefas e responsáveis:**
-    - Criar interface de cadastro e login []
-    - Implementar autenticação básica com Firebase Auth []
+    - Criar interface de cadastro e login [Cleiver]
+    - Implementar autenticação básica com Firebase Auth [Matheys Menezes]
 - **História #2: Cadastro e listagem de produtos**
   - **Tarefas e responsáveis:**
-    - Criar formulário de cadastro de produtos []
-    - Implementar listagem de produtos no Firestore []
+    - Criar formulário de cadastro de produtos [Iago Nathan]
+    - Implementar listagem de produtos no Firestore [Matheus Melo]
    
 - **História #3: Edição e exclusão de produtos**
   - **Tarefas e responsáveis:**
-    - Criar botões de edição/exclusão na listagem de produtos
-    - Desenvolver endpoint para atualização/exclusão de produtos no Firestore
-    - Implementar modal de confirmação para exclusão
-    - Criar interface de edição com pré-carregamento dos dados atuais
+    - Criar botões de edição/exclusão na listagem de produtos [Matheus Menezes]
+    - Desenvolver endpoint para atualização/exclusão de produtos no Firestore [Cleiver]
+    - Implementar modal de confirmação para exclusão [Iago Nathan]
+    - Criar interface de edição com pré-carregamento dos dados atuais [Matheus Melo]
       
 - **História #4: Filtragem por categoria**
   - **Tarefas e responsáveis:**
-    - Adicionar componente de filtro na barra de navegação
-    - Implementar query param para filtragem na listagem de produtos
-    - Criar chips interativas (caixas de opção clicáveis) para seleção de categorias
-    - Atualizar query no Firestore com filtro de categoria
+    - Adicionar componente de filtro na barra de navegação [Matheus Melo]
+    - Implementar query param para filtragem na listagem de produtos [Matheus Menezes]
+    - Criar chips interativas (caixas de opção clicáveis) para seleção de categorias [Cleiver]
+    - Atualizar query no Firestore com filtro de categoria [Iago Nathan]
       
 ## Diagramas
