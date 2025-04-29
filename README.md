@@ -91,7 +91,8 @@
 ## Diagramas
 ### Diagrama de Casos de Uso
 Mostra o que os usuários podem fazer no sistema (cadastro, login, produtos, pagamentos etc).
-[![alt text](<Diagrama de caso de uso.png>)](https://github.com/IagoNat/TP1-ES/blob/main/public/images/Diagrama%20de%20caso%20de%20uso.png)
+![image](https://github.com/user-attachments/assets/70ccbc68-cf15-4bac-b924-98e7d8981d79)
+
 
 ### Diagrama de Classes
 Mostra as entidades principais e suas relações (Usuário, Produto, Comentário, Avalição, Pagamento).
