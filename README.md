@@ -96,7 +96,8 @@ Mostra o que os usuários podem fazer no sistema (cadastro, login, produtos, pag
 
 ### Diagrama de Classes
 Mostra as entidades principais e suas relações (Usuário, Produto, Comentário, Avalição, Pagamento).
-![alt text](<Diagrama de classes.png>)
+![image](https://github.com/user-attachments/assets/89c3f044-5761-4644-a9bc-25daf254a055)
+
 
 ### Diagrama de Sequência
 Mostra o passo-a-passo de uma interação (ex: criar conta, comprar produto).
