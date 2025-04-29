@@ -101,4 +101,5 @@ Mostra as entidades principais e suas relações (Usuário, Produto, Comentário
 
 ### Diagrama de Sequência
 Mostra o passo-a-passo de uma interação (ex: criar conta, comprar produto).
-![alt text](<Diagrama de sequencia.png>)
+![image](https://github.com/user-attachments/assets/d5592437-5613-49d0-ad91-553f1c077b3c)
+
