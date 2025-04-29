@@ -89,3 +89,14 @@
     - Lógica de vendedor receber valor [Cleiver]
     - Interface de pagamento [Matheus Menezes]  
 ## Diagramas
+### Diagrama de Casos de Uso
+Mostra o que os usuários podem fazer no sistema (cadastro, login, produtos, pagamentos etc).
+![alt text](<Diagrama de caso de uso.png>)
+
+### Diagrama de Classes
+Mostra as entidades principais e suas relações (Usuário, Produto, Comentário, Avalição, Pagamento).
+![alt text](<Diagrama de classes.png>)
+
+### Diagrama de Sequência
+Mostra o passo-a-passo de uma interação (ex: criar conta, comprar produto).
+![alt text](<Diagrama de sequencia.png>)

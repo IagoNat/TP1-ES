@@ -1,0 +1,32 @@
+{
+  "name": "tp1-es",
+  "version": "1.0.0",
+  "description": "📍Este projeto tem como objetivo desenvolver um marketplace minimalista. O foco é criar uma plataforma funcional onde usuários possam cadastrar, explorar e interagir com produtos à venda de maneira simples e eficiente.",
+  "main": "next.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IagoNat/TP1-ES.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IagoNat/TP1-ES/issues"
+  },
+  "homepage": "https://github.com/IagoNat/TP1-ES#readme",
+  "dependencies": {
+    "@stripe/stripe-js": "^7.2.0",
+    "firebase": "^11.6.1",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "stripe": "^18.0.0",
+    "typescript": "^5.8.3"
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.2",
+    "@types/react-dom": "^19.1.2"
+  }
+}
