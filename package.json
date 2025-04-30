@@ -4,7 +4,10 @@
   "description": "📍Este projeto tem como objetivo desenvolver um marketplace minimalista. O foco é criar uma plataforma funcional onde usuários possam cadastrar, explorar e interagir com produtos à venda de maneira simples e eficiente.",
   "main": "next.config.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "repository": {
     "type": "git",
@@ -23,10 +26,17 @@
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "stripe": "^18.0.0",
-    "typescript": "^5.8.3"
+    "typescript": "^5.8.3",
+    "next": "15.3.1"
   },
   "devDependencies": {
     "@types/react": "^19.1.2",
-    "@types/react-dom": "^19.1.2"
+    "@types/react-dom": "^19.1.2",
+    "@tailwindcss/postcss": "^4",
+    "tailwindcss": "^4",
+    "eslint": "^9",
+    "eslint-config-next": "15.3.1",
+    "@eslint/eslintrc": "^3"
+    
   }
 }
