@@ -27,7 +27,7 @@ export default function CadastroPage() {
     try {
     //   await cadastro(body);
       alert('Cadastro realizado com sucesso!');
-      router.push('/');
+      router.push('/login');
     } catch (err: any) {
       alert(err?.message || 'Erro no cadastro.');
       setCarregando(false);
