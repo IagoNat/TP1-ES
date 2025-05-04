@@ -23,20 +23,20 @@
   "dependencies": {
     "@stripe/stripe-js": "^7.2.0",
     "firebase": "^11.6.1",
+    "next": "15.3.1",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
+    "react-firebaseui": "^6.0.0",
     "stripe": "^18.0.0",
-    "typescript": "^5.8.3",
-    "next": "15.3.1"
+    "typescript": "^5.8.3"
   },
   "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
     "@types/react": "^19.1.2",
     "@types/react-dom": "^19.1.2",
-    "@tailwindcss/postcss": "^4",
-    "tailwindcss": "^4",
     "eslint": "^9",
     "eslint-config-next": "15.3.1",
-    "@eslint/eslintrc": "^3"
-    
+    "tailwindcss": "^4"
   }
 }

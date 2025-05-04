@@ -1,17 +1,10 @@
 {
-  "name": "desafio-dti",
+  "name": "tp1-es",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "build": "tsc",
-    "test:load-envs": "dotenv -e .env.test",
-    "test": "npm run migrate:test && jest",
-    "test:coverage": "npm run test:load-envs -- jest -- --coverage --runInBand",
-    "migrate:test": "npm run test:load-envs prisma migrate deploy",
-    "dev:load-envs": "dotenv -e .env",
-    "migrate:dev": "npm run dev:load-envs prisma migrate dev",
-    "migrate:deploy": "prisma migrate deploy",
     "dev": "nodemon src/index.ts",
     "start": "node dist/src/index.js"
   },

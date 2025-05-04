@@ -3,11 +3,23 @@
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 import Link from 'next/link';
+import { GoogleAuthProvider, GithubAuthProvider } from 'firebase/auth';
+import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth';
+import { auth } from '../../../firebase/clientApp';
 
 export default function LoginPage() {
   const router = useRouter();
   const [form, setForm] = useState({ email: '', senha: '' });
   const [carregando, setCarregando] = useState(false);
+
+  const uiConfig = {
+    signInFlow: 'popup',
+    signInSuccessUrl: '/',
+    signInOptions: [
+      GoogleAuthProvider.PROVIDER_ID,
+      GithubAuthProvider.PROVIDER_ID,
+    ],
+  };
 
   function atualizaForm(event: React.ChangeEvent<HTMLInputElement>) {
     setForm({ ...form, [event.target.name]: event.target.value });
@@ -55,6 +67,11 @@ export default function LoginPage() {
           {carregando ? 'Carregando...' : 'Entrar'}
         </button>
       </form>
+
+      <div className="mt-6 w-full max-w-xs">
+        <StyledFirebaseAuth uiConfig={uiConfig} firebaseAuth={auth} />
+      </div>
+
       <Link href="/cadastro-escolha" className="mt-4 text-blue-900 underline">
         Não tem uma conta? Cadastre-se
       </Link>
