@@ -3,23 +3,13 @@
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 import Link from 'next/link';
-import { GoogleAuthProvider, GithubAuthProvider } from 'firebase/auth';
-import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth';
-import { auth } from '../../../firebase/clientApp';
+import { doSignInWithEmailAndPassword, doSignInWithGoogle } from '../../../firebase/auth';
+import { useAuthContext } from '../../context/AuthContext';
 
 export default function LoginPage() {
   const router = useRouter();
+  const { setUser } = useAuthContext();
   const [form, setForm] = useState({ email: '', senha: '' });
-  const [carregando, setCarregando] = useState(false);
-
-  const uiConfig = {
-    signInFlow: 'popup',
-    signInSuccessUrl: '/',
-    signInOptions: [
-      GoogleAuthProvider.PROVIDER_ID,
-      GithubAuthProvider.PROVIDER_ID,
-    ],
-  };
 
   function atualizaForm(event: React.ChangeEvent<HTMLInputElement>) {
     setForm({ ...form, [event.target.name]: event.target.value });
@@ -27,12 +17,22 @@ export default function LoginPage() {
 
   async function efetuarLogin(event: React.FormEvent) {
     event.preventDefault();
-    setCarregando(true);
     try {
-      // const res = await login(form.email, form.senha);
+      const result = await doSignInWithEmailAndPassword(form.email, form.senha);
+      setUser({ uid: result.user.uid, email: result.user.email || '' });
+      router.push('/');
     } catch (err: any) {
       alert(err?.message || 'Erro ao efetuar login.');
-      setCarregando(false);
+    }
+  }
+
+  async function loginGoogle() {
+    try {
+      const user = await doSignInWithGoogle();
+      setUser({ uid: user.uid, email: user.email || '' });
+      router.push('/');
+    } catch (err: any) {
+      alert(err?.message || 'Erro ao logar com Google.');
     }
   }
 
@@ -45,7 +45,6 @@ export default function LoginPage() {
           placeholder="Email"
           value={form.email}
           onChange={atualizaForm}
-          disabled={carregando}
           required
           className="w-full px-3 py-2 border border-gray-300 rounded-md"
         />
@@ -55,24 +54,25 @@ export default function LoginPage() {
           placeholder="Senha"
           value={form.senha}
           onChange={atualizaForm}
-          disabled={carregando}
           required
           className="w-full px-3 py-2 border border-gray-300 rounded-md"
         />
         <button
           type="submit"
-          disabled={carregando}
           className="w-40 py-2 rounded-md bg-blue-900 text-white hover:opacity-90 transition"
         >
-          {carregando ? 'Carregando...' : 'Entrar'}
+          Entrar
+        </button>
+        <button
+          type="button"
+          onClick={loginGoogle}
+          className="w-40 py-2 rounded-md bg-red-600 text-white hover:opacity-90 transition"
+        >
+          Login com Google
         </button>
       </form>
 
-      <div className="mt-6 w-full max-w-xs">
-        <StyledFirebaseAuth uiConfig={uiConfig} firebaseAuth={auth} />
-      </div>
-
-      <Link href="/cadastro-escolha" className="mt-4 text-blue-900 underline">
+      <Link href="/signup" className="mt-4 text-blue-900 underline">
         Não tem uma conta? Cadastre-se
       </Link>
     </div>

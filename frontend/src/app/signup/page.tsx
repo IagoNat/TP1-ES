@@ -3,9 +3,12 @@
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 import Link from 'next/link';
+import { doCreateUserWithEmailAndPassword } from '../../../firebase/auth';
+import { useAuthContext } from '../../context/AuthContext';
 
 export default function CadastroPage() {
   const router = useRouter();
+  const { setUser } = useAuthContext();
   const [carregando, setCarregando] = useState(false);
   const [form, setForm] = useState({
     firstName: '',
@@ -22,12 +25,11 @@ export default function CadastroPage() {
   async function efetuarCadastro(event: React.FormEvent) {
     event.preventDefault();
     setCarregando(true);
-    const body = { ...form, bookings: [], reviews: [] };
 
     try {
-    //   await cadastro(body);
-      alert('Cadastro realizado com sucesso!');
-      router.push('/login');
+      const result = await doCreateUserWithEmailAndPassword(form.email, form.password);
+      setUser({ uid: result.user.uid, email: result.user.email || '' });
+      router.push('/');
     } catch (err: any) {
       alert(err?.message || 'Erro no cadastro.');
       setCarregando(false);
