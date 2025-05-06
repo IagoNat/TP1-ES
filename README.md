@@ -10,6 +10,22 @@
 - Comentar em produtos e editar/excluir seus próprios comentários
 - Avaliar produtos com notas de 1 a 5 estrelas
 
+Para executar siga os seguintes passos:
+
+```sh
+# Step 1: Clone the repository using the project's Git URL.
+git clone <YOUR_GIT_URL>
+
+# Step 2: Navigate to the project directory.
+cd <YOUR_PROJECT_NAME>
+
+# Step 3: Install the necessary dependencies.
+npm i
+
+# Step 4: Start the development server with auto-reloading and an instant preview.
+npm run dev
+```
+
 
 ## 👨🏾‍💻 Membros
 - Iago Nathan [Fullstack]
@@ -101,5 +117,5 @@ Mostra as entidades principais e suas relações (Usuário, Produto, Comentário
 
 ### Diagrama de Sequência
 Mostra o passo-a-passo de uma interação (ex: criar conta, comprar produto).
-[![image](https://github.com/user-attachments/assets/d5592437-5613-49d0-ad91-553f1c077b3c)](https://github.com/IagoNat/TP1-ES/blob/fa87f858b242570a4ea62c94b8031f0dfd18ae59/public/images/Diagrama%20de%20sequencia.png)
+![image](https://github.com/user-attachments/assets/d5592437-5613-49d0-ad91-553f1c077b3c)
 
